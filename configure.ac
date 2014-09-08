@@ -18,7 +18,8 @@ AC_ARG_WITH([blas],
 [AC_HELP_STRING([--with-blas],
                 [use system gsl BLAS library (if available)])],
 [BLAS_LIBS=$with_blas],
-[BLAS_LIBS="-lgslcblas"])
+[BLAS_LIBS="-lgslcblas"]) # no BLAS libraries found
+AC_SUBST([BLAS_LIBS])
 
 # I did not find any BLAS libraries, (R is probably not well configured)
 # if test "${BLAS_LIBS}" = ""; then
