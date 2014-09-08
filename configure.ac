@@ -1,4 +1,4 @@
-AC_INIT([src/NormalizeProbes.c])
+AC_INIT(MotIV,1.20.0)
 
 # determine RHOME
 : ${R_HOME=`R RHOME`}
